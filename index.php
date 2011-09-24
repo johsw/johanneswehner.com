@@ -24,7 +24,7 @@
       </div>
       <div id="contents-wrapper">
         <div id="contents">
-          <div id="tools" class="single-col">
+          <div id="tools" class="single-col first">
             <h3>
               I use tools like
             </h3>
@@ -34,7 +34,7 @@
             <br />
             <p>...and the tagging project I founded: <a href="http://tagger.dk">Tagger</a></p>
           </div>
-          <div id="experience" class="single-col">
+          <div id="experience" class="single-col second">
             <h3>
               I've helped
             </h3>
@@ -42,7 +42,7 @@
               <a href="http://www.information.dk/">Dagbladet Information</a>, <a href="http://tv2.dk">Tv2</a>, <a href="http://borsen.dk">Børsen</a>, <a href="http://www.al-akhbar.com">Al-Akhbar</a>, <a href="http://www.ms.dk">Mellemfolkeligt Samvirke</a>, <a href="http://aoh.dk">aoh.dk</a>, <a href="http://uovo.dk">Uovo</a>, <a href="http://kommunikationsfirmaet.com/">Kommunikationsfirmaet</a>
             </p>
           </div>
-          <div id="tasks" class="single-col">
+          <div id="tasks" class="single-col third">
             <h3>
               I do
             </h3>
@@ -50,7 +50,7 @@
               Content metadata consultancy, Tagger implementation and integration, Web Application Development, Migration and Optimization.
             </p>
           </div>
-          <div id="contact" class="single-col last">
+          <div id="contact" class="single-col fourth last">
             <h3>
               Contact
             </h3>
