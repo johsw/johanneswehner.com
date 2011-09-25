@@ -14,12 +14,9 @@
     <div about="#me" typeof="foaf:Person" id="main">
       <div id="intro-wrapper">
         <div id="intro">
-          <h1>
-            Hi! My name is <span id="my-name" property="foaf:name">Johannes Wehner</span>
-          </h1>
-          <h2>
-            I do open source web development and consulting. And tagging.
-          </h2>
+          <img id="intro-large" src="images/header_large.png" alt="Hi! My name is Johannes Wehner" />
+          <img id="intro-medium" src="images/header_medium.png" alt="Hi! I'm Johannes Wehner" />
+          <img id="intro-small" src="images/header_small.png" alt="Hi! I'm Johannes Wehner" />
         </div>
       </div>
       <div id="contents-wrapper">

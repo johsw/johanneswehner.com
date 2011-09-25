@@ -6,10 +6,9 @@ body {
 
 #main  {
 text-align: left; 
-
- margin: 10% 10%;
- 
- width: 80%;
+ margin: 10% 4%;
+ width: 92%;
+ max-width: 2024px;
 }
 
 
@@ -18,35 +17,19 @@ text-align: left;
   margin-top: 0;
   margin-bottom: 0;
 }
-#intro {
-  
-  font-weight: normal;
-  color: #eee;
-  font-family: "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
 
-  margin-bottom:0;
-  padding: 40px 0;
 
+#intro img {
+  width: 100%;
 }
 
-#intro h1 {
-  margin-top: 0;
-  color: #eee;
-  font-size: 370%;
-  margin-bottom: 0;
-  font-weight: normal;
-}
-#intro h2 {
-  font-size: 195%;
-  margin-top: 0px;
-  margin-bottom: 0;
-    font-weight: normal;
+#intro #intro-medium {
+  display: none;
 }
 
-#my-name {
-  font-weight: bold;
+#intro #intro-small {
+  display: none;
 }
-
 
 h3 {
  color: #eee;
@@ -72,6 +55,7 @@ color: #FFF;
 
 #footer {
 padding-top:10px;
+
 text-align: right;
 font: 60% "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
 }
@@ -80,13 +64,13 @@ font: 60% "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
 #footer-wrapper {
   margin-top: 0px;
   color: #898;
+  width: 100%;
 }
 
 #contents {
-padding-top:10px;
+padding-top:20px;
 
-font: 90% "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
-height: 180px;
+font: 90% "Helvetica", "Helvetica Neue", Verdana, sans-serif;
 }
 
 
@@ -95,14 +79,65 @@ p {
 }
 
 .single-col {
-  width: 228px;
+  width: 21.5%;
   height: 140px;
-  margin-right: 12px;
-  padding-right: 8px;
+  margin-right: 2%;
+  padding-right: 2%;
   float: left;
   border-right: 1px dotted #363;
 
 }
+
+
+@media screen and (max-width: 800px) {
+  .single-col {
+    width: 46%;
+    margin-right: 2%;
+    padding-right: 2%;
+    float: left;
+    border-right: 1px dotted #363;
+    padding-bottom: 20px;
+
+  }
+  .single-col.second {
+    clear: right;
+    border-right: none;
+  }
+  #intro #intro-large {
+    display: none;
+  }  
+  #intro #intro-medium {
+    display: block;
+  }
+  #intro #intro-small {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .single-col {
+    width: 98%;
+    margin-right: 2%;
+    padding-right: 2%;
+    float: none;
+    border-bottom: 1px dotted #363;
+    border-right: none;
+    padding-bottom: 0;
+  }
+  .single-col.last {
+    clear: both;
+  }
+  #intro #intro-large {
+    display: none;
+  }  
+  #intro #intro-medium {
+    display: none;
+  }
+  #intro #intro-small {
+    display: block;
+  }
+}
+
 
 .last {
 margin-right: 0px;
