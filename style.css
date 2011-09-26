@@ -81,7 +81,7 @@ p {
 
 .single-col {
   width: 21.5%;
-  height: 140px;
+  min-height: 180px;
   margin-right: 2%;
   padding-right: 2%;
   float: left;
@@ -118,16 +118,18 @@ p {
 
 @media screen and (max-width: 420px) {
   .single-col {
+    min-height: 0px;
     width: 98%;
     margin-right: 2%;
     padding-right: 2%;
     float: none;
     border-bottom: 1px dotted #363;
     border-right: none;
-    padding-bottom: 0;
+    padding-bottom: 20px;
   }
   .single-col.last {
     clear: both;
+    border-bottom: none;
   }
   #intro #intro-large {
     display: none;
