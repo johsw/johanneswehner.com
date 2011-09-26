@@ -71,6 +71,7 @@ font: 60% "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
 padding-top:20px;
 
 font: 90% "Helvetica", "Helvetica Neue", Verdana, sans-serif;
+
 }
 
 
@@ -85,7 +86,7 @@ p {
   padding-right: 2%;
   float: left;
   border-right: 1px dotted #363;
-
+  line-height: 130%;
 }
 
 
@@ -96,12 +97,13 @@ p {
     padding-right: 2%;
     float: left;
     border-right: 1px dotted #363;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 
   }
   .single-col.second {
     clear: right;
     border-right: none;
+    margin-right: 0;
   }
   #intro #intro-large {
     display: none;

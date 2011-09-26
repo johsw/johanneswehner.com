@@ -26,7 +26,7 @@
               I use tools like
             </h3>
             <p>
-              <a href="http://drupal.org/">Drupal</a>, <a href="http://php.net">PHP</a>, <a href="http://jquery.com/">jQuery</a>, <a href="http://httpd.apache.org/">Apache</a>, <a href="http://mysql.com">MySQL</a>, <a href="http://varnish-cache.org/">Varnish</a>, <a href="http://www.sphinxsearch.com/">Sphinx</a>, <a href="http://memcached.org/">Memcached</a> and <a href="http://www.centos.org/">CentOS Linux.</a>
+              <a href="http://drupal.org/">Drupal</a>, <a href="http://php.net">PHP</a>, <a href="http://jquery.com/">jQuery</a>, <a href="http://httpd.apache.org/">Apache</a>, <a href="http://mysql.com">MySQL</a>, <a href="http://varnish-cache.org/">Varnish</a>, <a href="http://www.sphinxsearch.com/">Sphinx</a>, <a href="http://memcached.org/">Memcached</a> and <a href="http://en.wikipedia.org/wiki/Linux">Linux.</a>
             </p>
             <br />
             <p>...and the tagging project I founded: <a href="http://tagger.dk">Tagger</a></p>
@@ -36,7 +36,7 @@
               I've helped
             </h3>
             <p>
-              <a href="http://www.information.dk/">Dagbladet Information</a>, <a href="http://tv2.dk">Tv2</a>, <a href="http://borsen.dk">Børsen</a>, <a href="http://www.al-akhbar.com">Al-Akhbar</a>, <a href="http://www.ms.dk">Mellemfolkeligt Samvirke</a>, <a href="http://aoh.dk">aoh.dk</a>, <a href="http://uovo.dk">Uovo</a>, <a href="http://kommunikationsfirmaet.com/">Kommunikationsfirmaet</a>
+              <a href="http://www.information.dk/">Dagbladet Information</a>, <a href="http://tv2.dk">Tv2</a>, <a href="http://videnskab.dk">Videnskab.dk</a>, <a href="http://borsen.dk">Børsen</a>, <a href="http://www.al-akhbar.com">Al-Akhbar</a>, <a href="http://www.ms.dk">Mellemfolkeligt Samvirke</a>, <a href="http://aoh.dk">aoh.dk</a>, <a href="http://uovo.dk">Uovo</a>, <a href="http://kommunikationsfirmaet.com/">Kommunikationsfirmaet</a>
             </p>
           </div>
           <div id="tasks" class="single-col third">
@@ -58,13 +58,6 @@
               <a href="http://twitter.com/johsw">twitter.com/johsw</a><br />
             </p>
           </div>
-        </div>
-      </div>
-      <div id="footer-wrapper">
-        <div id="footer">
-          <p>
-            Copenhagen, Denmark - CVR: 32749534
-          </p>
         </div>
       </div>
     </div><script type="text/javascript">
