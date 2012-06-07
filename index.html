@@ -14,11 +14,8 @@
   <body>
     <div about="#me" typeof="foaf:Person" id="main">
       <div id="intro-wrapper">
-        <div id="intro">
-          <img id="intro-large" src="images/header_large.png" alt="Hi! My name is Johannes Wehner" />
-          <img id="intro-medium" src="images/header_medium.png" alt="Hi! I'm Johannes Wehner" />
-          <img id="intro-small" src="images/header_small.png" alt="Hi! I'm Johannes Wehner" />
-        </div>
+        <h1>Hi. I'm Johannes Wehner</h1>
+        <h2>I do open source web application development</h2>
       </div>
       <div id="contents-wrapper">
         <div id="contents">
@@ -63,7 +60,14 @@
           </div>
         </div>
       </div>
-    </div><script type="text/javascript">
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="jquery.fittext.js"></script>
+    <script type="text/javascript">
+      $("h1").fitText(1.05);
+      $("h2").fitText(1.9);
+    </script>
+    <script type="text/javascript">
 //<![CDATA[
 
       var _gaq = _gaq || [];
