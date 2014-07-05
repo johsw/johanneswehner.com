@@ -1,5 +1,7 @@
 body {
- background: #223;
+ background: url('./images/bg.jpg');
+ background-size: 2000px auto;
+ background-position: right 0px;
  margin: 0;
  text-align: center; 
 }
@@ -9,6 +11,7 @@ text-align: left;
  margin: 8% 4%;
  width: 92%;
  max-width: 2024px;
+
 }
 
 
@@ -42,7 +45,7 @@ h3 {
 }
 a, a:active, a:visited {
 
-color: #898;
+color: #aba;
 
 text-decoration: none;
 }
@@ -56,6 +59,7 @@ color: #FFF;
 #contents-wrapper {
   margin-top: 0px;
   color: #898;
+
 }
 
 #footer {
@@ -63,6 +67,7 @@ padding-top:10px;
 
 text-align: right;
 font: 60% "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+
 }
 
 
@@ -92,6 +97,7 @@ p {
   float: left;
   border-right: 1px dotted #666;
   line-height: 130%;
+
 }
 
 
@@ -125,6 +131,7 @@ p {
   .single-col.last {
     clear: both;
     border-bottom: none;
+    padding-bottom: 100px;
   }
 }
 
