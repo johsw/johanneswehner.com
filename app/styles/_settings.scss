@@ -1,0 +1,19 @@
+// Pre-Framework Imports/Overrides ------ //
+// Grid Setup
+$column: 90px;
+$gutter: 30px;
+$grid-columns: 12; // Total number of columns in the grid
+$max-width: em(2048); // Max-width of the outer container
+
+// Visual Grid Variables
+$visual-grid: false; // Display the base grid
+$visual-grid-color: #999;
+$visual-grid-opacity: 0.4;
+$visual-grid-index: front; // Show grid behind content (back) or overlay it over the content (front)
+
+// Post-Framework Imports/Overrides ------ //
+// Media Query Breakpoints
+$mobile: new-breakpoint(max-width 600px 4); // Use a 4 column grid
+$tablet: new-breakpoint(min-width 601px max-width 889px); // We're back on a 12 col grid from here up.
+$laptop: new-breakpoint(min-width 890px max-width 1399px);
+$desktop: new-breakpoint(min-width 1400px);

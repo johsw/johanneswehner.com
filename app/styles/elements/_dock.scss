@@ -1,0 +1,14 @@
+#dock {
+  font-family: $base-font-family;
+  font-size: $base-font-size * 0.6;
+}
+
+#dock h3 {
+    font-family: $base-font-family;
+}
+#dock li {
+  padding: 5px 10px 5px;
+  &:hover {
+    background: #FFF;
+  };
+}
