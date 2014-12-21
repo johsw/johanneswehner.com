@@ -11,8 +11,92 @@
 
 body {
 
- //background-position: right 0px;
  margin: 0;
  text-align: center; 
- background-attachment: fixed;
+}
+#intro-wrapper {
+  text-shadow: 0px 0px 10px #000;
+  max-width: 2000px;
+  h1, h2 {
+    animation-name: enter; 
+    animation-duration: .5s;
+    animation-timing-function: cubic-bezier(.71,.55,.62,1.17); 
+    color: #eee;
+    transition: font-size 0.3s;
+  }
+  @include media($medium) {
+    h1 {
+      font-size: $h1-font-size * 1.8;
+    }
+    h2 {
+      font-size: $h2-font-size * 1.2;
+    }
+  }
+  @include media($small) {
+    h1 {
+      font-size: $h1-font-size * 1.0;
+    }
+    h2 {
+      font-size: $h2-font-size * 0.8;
+    }
+  }
+  .links {
+     @include clearfix;
+    text-align: center;
+    margin: 20px auto 0;
+    max-width: 800px;
+    
+    a {
+      display: inline-block;
+      font-family: $sans-serif;
+      color: #ddd;
+      margin-right: 20px;
+      transition: color 0.4s, box-shadow 0.4s;
+    }
+    a.link-cvr {
+      margin-right: 0px;
+    }
+    @include media($medium-down) {
+      a {
+        margin-top: 5px;
+        margin-right: none;
+        display: block;
+      }
+    }
+    
+    a:hover {
+      text-shadow: 0px 0px 15px #000;
+      color: #fff;
+      //transform: perspective(1px) scale3d(1.1, 1.1, 1.1) translateZ(0);
+    };
+  }
+}
+
+#contents-wrapper {
+  font-size: $base-font-size * 1.5;
+  line-height: $base-font-size * 1.25;
+  @include media($small) {
+    font-size: $base-font-size * 1.20;
+  }
+}
+
+#contents-wrapper .button {
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+  font-size: $base-font-size;
+  transition: background-color 0.5s;
+
+}
+
+@keyframes enter {
+  from {
+    transform: scale3d(0.8,0.8,0.8);
+    opacity: 0;
+    
+  }
+  to { 
+    transform: scale3d(1,1,1);
+    opacity: 1;
+  }
 }

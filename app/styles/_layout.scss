@@ -1,58 +1,39 @@
 
-#contents {
+#contents-wrapper {
   @include outer-container;
-	position: relative;
-	z-index: 100;
-	top: 100vh;
-  padding: 0px;
-	background: #eee;
-	color: #080d27;
-	a {
-		display: block;
-		width: 20%;
-		height: 100px;
-		text-align: center;
-		padding-top: 40px;
-		float: left;
-		background: #eee;
-		transition: background-color .5s;
-		//font-weight: bold;
-		&:hover {
-			background: #ddd;
-			//color: #FFF;
-		}
-	}
+  position: relative;
+  z-index: 300;
+  top: 100vh;
+  color: #fff;
+  text-align: left;
+  //background: rgba(10, 14, 24, 0.9);
+  background: url('../images/bg.jpg');
+}
+.contents-box-wrapper {
+  background: #dedede;
+  box-shadow: 0px 0px 4px #333;
+  color: #333;
+}
+.contents-box {
+  padding: 40px 10px;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 
 #intro-wrapper {
-	position: fixed;
-	height: 100vh;
-	width: 100%;
-	z-index: 50;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  z-index: 100;
   padding-top: 30vh;
   background: url('../images/bg.jpg');
-	background-position: right;
+  background-position: right;
   background-size: 2000px auto;
-	h1, h2 {
-	  animation-name: enter; 
-		animation-duration: .5s;
-	  animation-timing-function: cubic-bezier(.71,.55,.62,1.17); 
-		text-shadow: 0px 0px 10px #000;
-	}
+  @include media($medium) {
+    padding-top: 25vh;
+  }
   //animation-fill-mode: none;
-	//transform: translateY(-60vh);
-	
-}
-
-@keyframes enter {
-  from {
-    transform: translateY(5vh);
-		opacity: 0;
-		
-  }
-  to { 
-    transform: translateY(0);
-		opacity: 1;
-  }
+  //transform: translateY(-60vh);
+  
 }
