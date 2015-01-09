@@ -8,6 +8,7 @@
 @import "layout";
 @import "fonts";
 @import "icons";
+@import "cards";
 
 body {
 
@@ -91,7 +92,7 @@ body {
 
 @keyframes enter {
   from {
-    transform: scale3d(0.8,0.8,0.8);
+    transform: scale3d(0.9,0.9,0.9);
     opacity: 0;
     
   }
