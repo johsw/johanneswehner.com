@@ -17,7 +17,6 @@ $(document).ready(function() {
         $('body').addClass('welcome-hidden');
         welcomeShown = false;
       }
-      console.log('hide');      
     }
   }
 });
