@@ -18,13 +18,12 @@ body {
 #intro-wrapper {
   text-shadow: 0px 0px 10px #000;
   max-width: 2000px;
-  h1, h2 {
-    animation-name: enter; 
-    animation-duration: .5s;
-    animation-timing-function: cubic-bezier(.71,.55,.62,1.17); 
+  h1, h2, .links {
+    transition: opacity .5s, transform .5s;
     color: #eee;
-    transition: font-size 0.3s;
+    opacity: 1;
   }
+
   @include media($medium) {
     h1 {
       font-size: $h1-font-size * 1.8;
@@ -72,6 +71,12 @@ body {
     };
   }
 }
+body.welcome-hidden #intro-wrapper {
+  h1, h2, .links {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+}
 
 #contents-wrapper {
   font-size: $base-font-size * 1.5;
@@ -88,16 +93,4 @@ body {
   font-size: $base-font-size;
   transition: background-color 0.5s;
 
-}
-
-@keyframes enter {
-  from {
-    transform: scale3d(0.9,0.9,0.9);
-    opacity: 0;
-    
-  }
-  to { 
-    transform: scale3d(1,1,1);
-    opacity: 1;
-  }
 }
