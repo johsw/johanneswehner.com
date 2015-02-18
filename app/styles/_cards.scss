@@ -15,7 +15,6 @@ h4.cases {
 
 }
 .card {
-  box-shadow: 0px 0px 4px #333;
   min-height: 150px;
   font-family: $sans-serif;
   width: 48%;
@@ -35,17 +34,16 @@ h4.cases {
     }
   }
   float: left;
-  background: #eee;
+  border: 1px solid #000;
+  background: rgba(6, 12, 24, 0.9);
   overflow: hidden;
   max-height: 150px;
-  border: 1px solid #ccc;
   margin-bottom: 20px;
   position: relative;
   transition: all 0.3s;
   &:hover {
-    box-shadow: 0px 0px 10px #333;
+
     transform: scale(1.02, 1.02);
-    background: #fff;
   };
 }
 /*
@@ -58,8 +56,6 @@ h4.cases {
 
 .card-header {
   width: 100%;
-  background: #ddd;
-  border-bottom: 1px solid #bbb;
 }
 
 .card-copy {
@@ -70,20 +66,20 @@ h4.cases {
   width: 100%;
   line-height: 1.25;
   padding: 8px 10px;
-  color: #000;
+  color: #ccc;
 }
 
 .card h5 {
   font-family: $sans-serif;
   color: #eee;
-  height: 30px;
+  height: 35px;
   font-size: $base-font-size * 0.75;
   @include media($small) {
     font-size: $base-font-size * 0.90;
   }
   text-align: center;
-  padding: 5px 0;
+  padding: 10px 0;
   a {
-    color: #333;
+    color: #fff;
   }
 }

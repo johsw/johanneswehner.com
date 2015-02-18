@@ -9,9 +9,9 @@
 
 }
 .contents-box-wrapper {
-  background: #dedede;
-  box-shadow: 0px 0px 4px #333;
-  color: #333;
+  background: rgba(6, 12, 24, 0.9);
+  box-shadow: 0px 0px 4px #000;
+  color: #fff;
 }
 .contents-box {
   padding: 40px 10px;
@@ -35,6 +35,4 @@
   @include media($small) {
     padding-top: 10vh;
   }
-  //animation-fill-mode: none;
-  //transform: translateY(-60vh);
 }
