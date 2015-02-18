@@ -1,4 +1,4 @@
-
+@charset "UTF-8";
 #contents-wrapper {
   @include outer-container;
   position: relative;
@@ -32,7 +32,9 @@
   @include media($medium) {
     padding-top: 25vh;
   }
+  @include media($small) {
+    padding-top: 10vh;
+  }
   //animation-fill-mode: none;
   //transform: translateY(-60vh);
-  
 }

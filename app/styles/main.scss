@@ -94,3 +94,23 @@ body.welcome-hidden #intro-wrapper {
   transition: background-color 0.5s;
 
 }
+
+body.welcome-hidden #intro-wrapper::after {
+  display: none;
+}
+
+#intro-wrapper::after {
+    display: block;
+    font-size: 50px;
+    content: '﹀';
+    position: absolute;
+    width: 120px;
+    left: 50vw;
+    margin-left: -60px;
+    bottom: 15px;
+    animation: pulsate 1s linear 0s infinite alternate;
+}
+@keyframes pulsate {
+    from { opacity: 0.2; }
+    to { opacity: 0.8; }
+}
