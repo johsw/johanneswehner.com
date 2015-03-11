@@ -27,8 +27,7 @@
   z-index: 100;
   padding-top: 30vh;
   background: url('../images/bg.jpg');
-  background-position: right;
-  background-size: 2000px auto;
+  background-size: cover;
   @include media($medium) {
     padding-top: 25vh;
   }
