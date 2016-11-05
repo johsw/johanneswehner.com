@@ -11,9 +11,13 @@
 @import "cards";
 
 body {
-
- margin: 0;
- text-align: center; 
+  background: url('../images/bg.jpg');
+  background-color: #041229;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  text-align: center; 
 }
 #intro-wrapper {
   text-shadow: 0px 0px 10px #000;

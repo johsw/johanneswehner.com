@@ -2,8 +2,6 @@
   "name": "johanneswehner.com",
   "private": true,
   "dependencies": {
-    "jquery": "~1.11.1",
-    "modernizr": "~2.8.2",
     "bourbon": "~3.2.3",
     "neat": "~1.5.1"
   }
