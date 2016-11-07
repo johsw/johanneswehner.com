@@ -96,7 +96,14 @@ body.welcome-hidden #intro-wrapper {
   text-align: center;
   font-size: $base-font-size;
   transition: background-color 0.5s;
-
+  display: block;
+  padding: 10px;
+  background: rgba(18, 32, 204, 0.5);
+  border: 1px solid #000;
+  color: #fff;
+  &:hover {
+    background: rgba(18, 32, 204, 0.7);
+  }
 }
 
 body.welcome-hidden #intro-wrapper::after {
