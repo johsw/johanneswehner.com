@@ -1,24 +1,22 @@
 @charset "UTF-8";
 #contents-wrapper {
-  position: relative;
-  z-index: 300;
-  top: 100vh;
-  color: #fff;
   text-align: left;
 }
 .contents-box-wrapper {
-  background: rgba(6, 12, 24, 0.9);
-  box-shadow: 0px 0px 4px #000;
-  color: #fff;
 }
 .contents-box {
-  padding: 40px 10px;
+  padding: 0px 10px 80px;
   max-width: 700px;
   margin: 0 auto;
 }
 
 #intro-wrapper {
-  position: fixed;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-content: center;
+  justify-content: center;
+  /*position: fixed;
   height: 100vh;
   width: 100%;
   z-index: 100;
@@ -28,5 +26,5 @@
   }
   @media (max-width: 350px) {
     padding-top: 10vh;
-  }
+  }*/
 }

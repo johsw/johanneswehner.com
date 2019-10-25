@@ -7,25 +7,32 @@
 @import "cards";
 
 body {
-  background: url("../images/bg.jpg");
-  background-color: #041229;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   margin: 0;
   text-align: center;
+  font-family: Raleway;
+  color: #333;
 }
 #intro-wrapper {
-  text-shadow: 0px 0px 10px #000;
+  //text-shadow: 0px 0px 10px #000;
   h1,
   h2,
   .links {
     transition: opacity 0.5s, transform 0.5s;
-    color: #eee;
     opacity: 1;
+    font-family: Oswald;
   }
 
-  @media (max-width: 600px) {
+  h1 {
+    font-size: $h1-font-size * 0.9;
+    margin: 10px 0;
+    line-height: 1;
+  }
+  h2 {
+    font-size: $h2-font-size * 0.7;
+    margin: 10px 0;
+  }
+
+  @media (min-width: 350px) and (max-width: 600px) {
     h1 {
       font-size: $h1-font-size * 1.8;
     }
@@ -33,12 +40,12 @@ body {
       font-size: $h2-font-size * 1.2;
     }
   }
-  @media (max-width: 350px) {
+  @media (min-width: 600px) {
     h1 {
-      font-size: $h1-font-size * 0.9;
+      font-size: $h1-font-size * 2.5;
     }
     h2 {
-      font-size: $h2-font-size * 0.7;
+      font-size: $h2-font-size * 1.7;
     }
   }
   .links {
@@ -48,10 +55,12 @@ body {
 
     a {
       display: inline-block;
-      font-family: $sans-serif;
-      color: #ddd;
+      text-decoration: none;
+      font-family: $copy-font;
+      color: #333;
       margin-right: 20px;
-      transition: color 0.4s, box-shadow 0.4s;
+      transition: transform 0.2s;
+      font-size: $base-font-size * 0.7;
     }
     a.link-cvr {
       margin-right: 0px;
@@ -66,8 +75,9 @@ body {
     }
 
     a:hover {
-      text-shadow: 0px 0px 15px #000;
-      color: #fff;
+      //text-shadow: 0px 0px 15px #000;
+
+      transform: translateX(-2px);
       //transform: perspective(1px) scale3d(1.1, 1.1, 1.1) translateZ(0);
     }
   }
@@ -76,14 +86,14 @@ body.welcome-hidden #intro-wrapper {
   h1,
   h2,
   .links {
-    opacity: 0;
-    transform: translateY(30px);
+    //transform: translateX(-2000px);
   }
 }
 
 #contents-wrapper {
-  font-size: $base-font-size * 1.5;
-  line-height: $base-font-size * 1.25;
+  margin: 0 auto;
+  font-size: $base-font-size * 1.1;
+  line-height: $base-font-size * 1.4;
   @media (max-width: 350px) {
     font-size: $base-font-size * 1.2;
   }
@@ -97,11 +107,13 @@ body.welcome-hidden #intro-wrapper {
   transition: background-color 0.5s;
   display: block;
   padding: 10px;
-  background: rgba(99, 11, 17, 0.8);
-  border: 1px solid #000;
-  color: #fff;
+  //background: rgba(99, 11, 17, 0.8);
+  background: #eee;
+  border: 1px solid #ddd;
+  color: #333;
+  text-decoration: none;
   &:hover {
-    background: rgba(99, 11, 17, 0.95);
+    background: #fff;
   }
 }
 
