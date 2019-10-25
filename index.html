@@ -11,35 +11,27 @@
     <meta name="description" content="Johannes Wehner, Senior Developer" />
     <meta
       name="keywords"
-      content="Angular.js, Angular2, jQuery, Open Source, frontend, Web development,Drupal, PHP, MySQL, node.js"
+      content="Angular.js, Angular2, Vue, JavaScript, jQuery, Open Source, frontend, Web development,Drupal, PHP, MySQL, node.js"
     />
     <meta property="og:title" content="Johannes Wehner // Senior Developer" />
-    <meta
-      property="og:image"
-      content="https://johanneswehner.com/images/face.jpg"
-    />
-    <meta property="og:description" content="Digital indholdsudvikler" />
+    <meta <meta property="og:description" content="Digital indholdsudvikler" />
     <meta property="og:url" content="https://johanneswehner.com" />
     <link
       href="//fonts.googleapis.com/css?family=Oswald|Raleway"
       rel="stylesheet"
       type="text/css"
     />
-    <!-- <link href="//fonts.googleapis.com/css?family=Sanchez:400italic,400" rel="stylesheet" type="text/css" /> -->
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
+
     <link rel="stylesheet" href="styles/main.scss" />
-    <!-- endbuild -->
   </head>
   <body>
+    <div class="canvas-wrapper" id="canvas-wrapper">
+      <canvas id="canvas"></canvas>
+    </div>
     <div about="#me" typeof="foaf:Person" id="main">
       <div id="intro-wrapper">
         <h1>Johannes Wehner</h1>
-        <h2>Udvikler digital formidling</h2>
+        <h2>Udvikler interaktiv formidling</h2>
         <div class="links">
           <a
             class="link-mail icon-mail"
@@ -240,31 +232,7 @@
         </div>
       </div>
     </div>
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
-    <!-- endbower -->
-    <!-- endbuild -->
 
-    <!-- build:js({app,.tmp}) scripts/main.js -->
     <script src="scripts/main.js"></script>
-    <!-- endbuild -->
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b, o, i, l, e, r) {
-        b.GoogleAnalyticsObject = l;
-        b[l] ||
-          (b[l] = function() {
-            (b[l].q = b[l].q || []).push(arguments);
-          });
-        b[l].l = +new Date();
-        e = o.createElement(i);
-        r = o.getElementsByTagName(i)[0];
-        e.src = "//www.google-analytics.com/analytics.js";
-        r.parentNode.insertBefore(e, r);
-      })(window, document, "script", "ga");
-      ga("create", "UA-3277919-4");
-      ga("send", "pageview");
-    </script>
   </body>
 </html>
