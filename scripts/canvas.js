@@ -2,8 +2,11 @@
 
 console.log("BUNDLE");
 
+import * as THREE from "three";
+
 export default class Canvas {
   constructor(el) {
+    console.log(THREE);
     console.log("construct");
     console.log(el);
     this.canvas = el;
@@ -17,7 +20,7 @@ export default class Canvas {
     this.directionY = 1;
     this.directionX = 1;
     this.step = 180;
-    this.color = "#d0d0f0";
+    this.color = "#d0d0d0";
 
     this.draw();
     // on resize
