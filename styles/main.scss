@@ -11,6 +11,10 @@ body {
   text-align: center;
   font-family: Raleway;
   color: #333;
+  *::selection {
+    color: white;
+    background: #333;
+  }
 }
 #intro-wrapper {
   //text-shadow: 0px 0px 10px #000;
@@ -77,7 +81,7 @@ body {
     a:hover {
       //text-shadow: 0px 0px 15px #000;
 
-      transform: translateX(-2px);
+      //transform: translateX(-2px);
       //transform: perspective(1px) scale3d(1.1, 1.1, 1.1) translateZ(0);
     }
   }
@@ -150,15 +154,4 @@ body.welcome-hidden #intro-wrapper::after {
   to {
     opacity: 0.8;
   }
-}
-#main {
-  position: relative;
-  z-index: 1;
-}
-#canvas {
-  top: 0;
-  left: 0;
-  position: fixed;
-  width: 100%;
-  z-index: 0;
 }

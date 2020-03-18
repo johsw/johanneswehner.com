@@ -1,0 +1,50 @@
+$cursorSize: 12px;
+
+#main {
+  position: relative;
+  z-index: 1;
+  cursor: none;
+  a {
+    cursor: none;
+  }
+}
+.cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  z-index: 111000;
+}
+.cursor-regular {
+  //animation: ;
+}
+#inner-cursor {
+  width: $cursorSize;
+  height: $cursorSize;
+  left: $cursorSize / 2;
+  top: ($cursorSize / 2) * -1;
+  border-radius: 50%;
+  z-index: 11000;
+  background: #f0f;
+}
+
+#inner-cursor.pulse {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+
+  70% {
+    transform: scale(2);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
