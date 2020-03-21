@@ -1,6 +1,6 @@
 "use strict";
 
-import Canvas from "./canvas";
+//import Canvas from "./canvas";
 import Pointer from "./pointer";
 
 var init = function() {
