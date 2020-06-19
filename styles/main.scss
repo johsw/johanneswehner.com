@@ -16,6 +16,11 @@ body {
     background: #333;
   }
 }
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 #intro-wrapper {
   //text-shadow: 0px 0px 10px #000;
   h1,
