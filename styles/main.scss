@@ -6,14 +6,19 @@
 @import "icons";
 @import "cards";
 
+$color: #fcfcfc;
+
+// https://coolors.co/02111b-3f4045-30292f-5d737e-fcfcfc
+
 body {
   margin: 0;
   text-align: center;
   font-family: Raleway;
-  color: #333;
+  color: $color;
+  background: #02111b;
   *::selection {
     color: white;
-    background: #333;
+    background: $color;
   }
 }
 canvas {
@@ -66,7 +71,7 @@ canvas {
       display: inline-block;
       text-decoration: none;
       font-family: $copy-font;
-      color: #333;
+      color: $color;
       margin-right: 20px;
       transition: transform 0.2s;
       font-size: $base-font-size * 0.7;
@@ -102,7 +107,7 @@ body.welcome-hidden #intro-wrapper {
 #contents-wrapper {
   margin: 0 auto;
   font-size: $base-font-size * 1.1;
-  line-height: $base-font-size * 1.4;
+  line-height: $base-font-size * 1.6;
   @media (max-width: 350px) {
     font-size: $base-font-size * 1.2;
   }
@@ -117,12 +122,12 @@ body.welcome-hidden #intro-wrapper {
   display: block;
   padding: 10px;
   //background: rgba(99, 11, 17, 0.8);
-  background: #eee;
-  border: 1px solid #ddd;
-  color: #333;
+  background: #3f4045;
+  border: 1px solid #3f4045;
+  color: $color;
   text-decoration: none;
   &:hover {
-    background: #fff;
+    background: #5d737e;
   }
 }
 

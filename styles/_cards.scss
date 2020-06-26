@@ -1,3 +1,5 @@
+$color: #fcfcfc;
+
 h4.cases {
   margin: 40px auto;
   text-align: center;
@@ -31,9 +33,8 @@ h4.cases {
   @media (max-width: 350px) {
     flex: 100%;
   }
-
-  border: 1px solid #ddd;
-  background: #eee;
+  color: $color;
+  background: rgba(93, 115, 126, 0.8);
 
   margin-bottom: 20px;
 
@@ -55,7 +56,7 @@ h4.cases {
   width: 100%;
   line-height: 1.25;
   padding: 8px 10px;
-  color: #333;
+  color: $color;
   font-family: $copy-font;
 }
 
@@ -72,7 +73,7 @@ h4.cases {
   text-align: center;
   padding: 10px 0;
   a {
-    color: #333;
+    color: $color;
     text-decoration: none;
   }
 }
