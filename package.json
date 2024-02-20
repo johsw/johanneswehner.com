@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
@@ -22,6 +25,7 @@
   },
   "dependencies": {
     "particles.js": "^2.0.0",
-    "particlesjs": "^2.2.3"
+    "particlesjs": "^2.2.3",
+    "vite": "^5.1.3"
   }
 }

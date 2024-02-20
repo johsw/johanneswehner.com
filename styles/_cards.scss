@@ -20,7 +20,7 @@ h4.cases {
 
 .card-wrapper {
   margin-top: 40px;
-
+box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -30,11 +30,11 @@ h4.cases {
   min-height: 150px;
   flex: 0 1 calc(50% - 60px);
   padding: 20px;
-  @media (max-width: 350px) {
+  @media (max-width: 500px) {
     flex: 100%;
   }
   color: $color;
-  background: rgba(93, 115, 126, 0.8);
+  background: rgba(63, 64, 69, 0.25);
 
   margin-bottom: 20px;
 
@@ -53,6 +53,7 @@ h4.cases {
   @media (max-width: 350px) {
     font-size: $base-font-size * 0.85;
   }
+  box-sizing: border-box;
   width: 100%;
   line-height: 1.25;
   padding: 8px 10px;

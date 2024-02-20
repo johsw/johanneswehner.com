@@ -1,6 +1,6 @@
 "use strict";
 
-require("./pointer.scss");
+import "./pointer.scss";
 
 export default class Pointer {
   constructor(el) {
@@ -22,7 +22,6 @@ export default class Pointer {
   init() {
     for (let n = 0; n < this.links.length; n++) {
       const link = this.links[n];
-      console.log(link);
       link.addEventListener("mouseenter", () => {
         this.innerCursor.classList.add("pulse");
       });
@@ -33,7 +32,7 @@ export default class Pointer {
   }
   initCursor() {
     // add listener to track the current mouse position
-    document.addEventListener("mousemove", e => {
+    document.addEventListener("mousemove", (e) => {
       this.clientX = e.clientX;
       this.clientY = e.clientY;
     });

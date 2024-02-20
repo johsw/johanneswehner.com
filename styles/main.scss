@@ -117,6 +117,7 @@ body.welcome-hidden #intro-wrapper {
   width: 100%;
   margin-top: 20px;
   text-align: center;
+  box-sizing: border-box;
   font-size: $base-font-size;
   transition: background-color 0.5s;
   display: block;
